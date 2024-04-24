@@ -50,20 +50,48 @@ body{
   background-color: #4070f4;
 
 } */
+.form .input-field{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
 .input-field input{
   height: 100%;
   width: 100%;
-  margin-top: 30px;
-  height: 50px;
- 
+  /* margin-top: 30px;
+  height: 50px; */
+ padding: 0 35px;
   border: none;
   outline: none;
   border-bottom: 2px solid #ccc;
   border-top: 2px solid transparent;
   font-size: 15px;
+  transition: all 0.2s ease;
 }
+.input-field i{
+  position: absolute;
+  top: 50%;
+  
+  transform: translateY(-50%);
+  font-size: 23px;
+  color: #999;
+}
+.input-field i.icon{
+  left: 0;
+}
+.input-field i.showHidePw{
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
 .input-field input:is(:focus, :valid){
   border-bottom-color: #4070f4;
+}
+
+.input-field input:is(:focus, :valid)  ~ i{
+  color: #4070f4;
 }
 .form .checkbox-text{
   display: flex;
