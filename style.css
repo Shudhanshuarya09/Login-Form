@@ -79,6 +79,13 @@ body{
   margin: 0 8px 0 4px;
   accent-color: #4070f4;
 }
+.form a.text{
+  text-decoration: none;
+}
+.form a:hover{
+  text-decoration: underline;
+}
+
 
 
 
